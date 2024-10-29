@@ -3,42 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>As Aventuras de Tôindo e Javô</title> <!-- Título atualizado -->
+    <title>As Aventuras de Tôindo e Javô</title>
     
     <!-- Meta tags para SEO -->
-    <meta name="description" content="Acompanhe as emocionantes aventuras de Tôindo e Javô em um mundo de diversão e aprendizado."> <!-- Descrição do site -->
-    <meta name="keywords" content="aventuras, Tôindo, Javô, diversão, aprendizado"> <!-- Palavras-chave -->
-    <meta name="author" content="Seu Nome"> <!-- Nome do autor -->
+    <meta name="description" content="Acompanhe as emocionantes aventuras de Tôindo e Javô em um mundo de diversão e aprendizado.">
+    <meta name="keywords" content="aventuras, Tôindo, Javô, diversão, aprendizado">
+    <meta name="author" content="Seu Nome">
     
     <!-- Meta tag para compatibilidade com navegadores antigos -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Link para a fonte do Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-
+    <!-- Importação da fonte local no formato .otf -->
     <style>
-        /* Estilo para o fundo em gradiente */
+        /* Importa a fonte Crocodile Feet DEMO */
+        @font-face {
+            font-family: 'Crocodile Feet DEMO';
+            src: url('fonts/CrocodileFeetDEMO.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Estilo para o fundo em gradiente com cores mais alegres */
         body {
             margin: 0;
             height: 100vh;
             display: flex;
-            flex-direction: column; /* Alinha os itens em coluna */
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: radial-gradient(circle, #00BFFF, #1E90FF); /* Azul Celeste Vivo e Azul Royal Vivo */
-            font-family: 'Patrick Hand', cursive; /* Fonte alegre */
+            background: radial-gradient(circle at center, #00CFFF, #009DFF, #0072E5); /* Tons mais claros e alegres de azul */
+            font-family: 'Crocodile Feet DEMO', cursive;
         }
-        /* Estilo para a logo com dimensões fixas */
+        /* Estilo para a logo com dimensões padrão */
         .logo {
             width: 560px;
             height: 305px;
         }
         /* Estilo para o texto "EM BREVE" */
         .coming-soon {
-            color: white; /* Cor do texto */
-            font-size: 48px; /* Tamanho da fonte maior */
-            margin-top: 20px; /* Espaçamento acima do texto */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra no texto para destacar */
+            color: white;
+            font-size: 48px;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        /* Media query para dispositivos móveis */
+        @media (max-width: 768px) {
+            .logo {
+                width: 90%;
+                height: auto;
+                max-width: 300px;
+            }
+            .coming-soon {
+                font-size: 36px;
+            }
         }
     </style>
 </head>
